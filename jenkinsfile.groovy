@@ -41,6 +41,9 @@ node {
 //    stage('Deploy') {
 //        echo "Deploy is not yet implemented"
 //    }
+    stage('my stage'){
+        echo 'my stage'
+    }
     stage('Preparation'){
         echo 'at Build'
     }
