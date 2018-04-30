@@ -62,7 +62,6 @@ node {
     stage('Build'){
         echo 'at Build'
     }
-
     stage('Archive'){
         echo 'at Archive'
     }

@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @SpringBootApplication
 public class DemoApplication {
 
+    private String doNotUse;
+
     @RequestMapping("/")
     public String index(){
         return "Hello world    d";
