@@ -44,8 +44,13 @@ node {
     stage('my stage'){
         echo 'my stage'
     }
-    stage('Preparation'){
-        echo 'at Build'
+    stage('PMD Check'){
+        step{
+            echo 'at PMD check'
+            step{
+                pmd canRunOnFailed:ture,  pattern: 'target/pmd.mxl'
+            }
+        }
     }
     stage('Checkout'){
         echo 'at Checkout'
